@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:beige;
+    color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gra {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blue;
+    text-align: center;
+    width: 400px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gra:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: blue;
+    text-shadow: 0 0 10px blue;
+}
+
+.interest p {
+    margin: 10px 0;
+    font-size: 20px;
+    color:blue;
+    text-shadow: 0 0 10px blue;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    color: blue;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:hover {
+    border-color: blue;
+    box-shadow: 0 0 20px blue;
+}
+
+button {
+    background-color: blue;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    box-shadow: 0 0 20px blue;
+}
+
+button:hover {
+    background-color:blue;
+    transform: scale(1.1);
+}
+
+#no {
+    font-size: 20px;
+    margin-top: 20px;
+    color:blue;
+    text-shadow: 0 0 10px blue;
+}
