@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart with Total</title>
+  <link rel="stylesheet" href="add.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MyShop</div>
+    <div class="cart-icon" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #74C0FC;"></i>Cart (<span id="cart-count">0</span>)
+    </div>
+  </nav>
+
+  
+    <!-- Product Cards -->
+    <div class="container">
+        <h1>Products</h1>
+        <div class="product1">
+      
+      <div class="product">
+        <img src="./imagep/-original-imah4zp7fvqp8wev.webp" alt="s23">
+        <h2>Samsung S23</h2>
+        <p>Price: $10</p>
+        <button onclick="addToCart('Samsung S23', 10, './imagep/-original-imah4zp7fvqp8wev.webp')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./imagep/713SsA7gftL._AC_UF1000,1000_QL80_.jpg" alt="Iphone 16">
+        <h2>Iphone 16</h2>
+        <p>Price: $20</p>
+        <button onclick="addToCart('Iphone 16', 20, './imagep/713SsA7gftL._AC_UF1000,1000_QL80_.jpg')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./imagep/images.jpg" alt="Samsung s24 ULTRA">
+        <h2> s24 ULTRA</h2>
+        <p>Price: $15</p>
+        <button onclick="addToCart('Samsung s24 ULTRA', 15, './imagep/images.jpg')">Add to Cart</button>
+      </div>
+    </div>
+</div>
+  
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cart-panel">
+      <h2>Cart Items</h2>
+      <ul id="cart-items"></ul>
+      <h3>Total: $<span id="cart-total">0</span></h3>
+    </div>
+  
+   
+  
+
+  <script src="add.js"></script>
+</body>
+</html>
